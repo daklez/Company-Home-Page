@@ -1,0 +1,203 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  font-size: 3vh;
+}
+
+body {
+  background-color: rgb(231, 216, 216);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+
+header img{
+  margin-left: 4%;
+  width: 10%;
+  opacity: 0.9;
+}
+@media only screen and (max-width: 500px) {
+  header {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  header img {
+    padding: 0 200px;
+    margin-right: 20px;
+    width: 20%;
+  }
+  
+}
+header nav {
+  margin-right: 2%;
+  opacity: 0.5;
+}
+header ul {
+  display: flex;
+}
+
+header ul li {
+  list-style: none;
+  padding: 20px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width: 500px) {
+  header ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  header ul li {
+    
+    padding: 5px;
+    
+  }
+}
+
+main {
+  margin-top: 7%;
+}
+
+main #hero {
+  background-image: url("../images/Hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main #hero-text {
+  text-align: center;
+  background-color: whitesmoke;
+  width: 100%;
+  padding: 2%;
+}
+
+#hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: rgb(243, 137, 215);
+}
+
+#services h2{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2rem;
+  color: rgb(243, 137, 215);
+}
+
+ #services-images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 50px;
+}
+#services-images figure{
+  width: 200px;
+  height: 200px;
+  margin: 80px;
+}
+#services-images img {
+  width: 100%;
+  height: 100%;
+}
+
+#services-images figcaption {
+  text-align: center;
+  font-weight: bold;
+}
+
+#team h2{
+  text-align: center;
+  font-size: 2rem;
+  margin: 100px;
+  color: rgb(243, 137, 215);
+}
+
+#team-images {
+  background-image: url("../images/team-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 50px;
+}
+#team-images figure{
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  margin-bottom: 80px;
+}
+
+#team-images img {
+  width: 100%;
+  height: 100%;
+}
+
+#team-images figcaption {
+  text-align: center;
+  font-weight: bold;
+   line-height: 30px;
+
+}
+
+#team-images figcaption span {
+  color: rgb(243, 137, 215);
+  font-size: 2rem;
+}
+
+
+#footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#footer-contact img {
+  width: 20%;
+  margin-bottom: 20px;
+  padding-top: 100px;
+}
+
+footer h5 {
+  margin-top: 10px;
+  font-size: 0.7rem;
+  color: grey;
+}
+
+@media only screen  and (max-width: 500px) {
+  footer h5 {
+    text-align: center;
+  }
+}
